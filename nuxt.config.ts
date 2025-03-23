@@ -9,4 +9,17 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  modules: [
+    [
+      '@pinia/nuxt',
+      {
+        autoImports: [
+          // 自动引入 `defineStore(), storeToRefs()`
+          'defineStore',
+          'storeToRefs',
+        ],
+      },
+    ],
+    'pinia-plugin-persistedstate/nuxt',
+  ],
 })

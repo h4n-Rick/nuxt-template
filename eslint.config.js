@@ -17,6 +17,7 @@ export default antfu(
       html: true,
     },
   },
+
   /**
    * 第二层配置选项，用于指定文件匹配模式和 Vue 特定的规则。
    */
